@@ -69,7 +69,22 @@ Windows:
 ~~~cli
 cd $env:LOCALAPPDATA
 git clone https://github.com/joaotdela/nvim-config.git
+Rename-Item -Path "$env:LOCALAPPDATA\nvim-config" -NewName "nvim"
+move "$env:LOCALAPPDATA\nvim\after" "$env:LOCALAPPDATA"
+cd nvim
+echo "require('theprimeagen')" > init.lua
+rmdir /s /q "$env:LOCALAPPDATA\nvim\plugin"
+nvim lua/theprimeagen/packer.lua
 ~~~
-Rename de dir for nvim.
-
+Run
+~~~nvim
+:so
+:PackerSync
+~~~
+Pray that works 
+then
+quit neovim
+~~~cli
+move "$env:LOCALAPPDATA\after" "$env:LOCALAPPDATA\nvim" 
+~~~
 

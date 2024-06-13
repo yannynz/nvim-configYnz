@@ -13,7 +13,6 @@ Custom Terminal:
 Obs: Run on PowerShell
 
 <pre ><code>git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"</code></pre> 
-
-<pre ><code> https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support https://github.com/BurntSushi/ripgrep</code></pre>
+https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support 
 
 <pre ><code>choco install ripgrep</code></pre>

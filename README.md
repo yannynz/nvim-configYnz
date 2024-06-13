@@ -1,15 +1,19 @@
 # nvim-config
 
 ## Linux:
-`git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-  ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+<pre><code>git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim </code></pre> 
 
-`sudo apt install ripgrep`
+<pre ><code>sudo apt install ripgrep </code></pre> 
+
+Custom Terminal:
+<pre ><code>sudo apt install tilix</code></pre> 
 
 ## Windows:
-`git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"`
+Obs: Run on PowerShell
 
-https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support https://github.com/BurntSushi/ripgrep
+<pre ><code>git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"</code></pre> 
 
-`choco install ripgrep`
+<pre ><code> https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support https://github.com/BurntSushi/ripgrep</code></pre>
 
+<pre ><code>choco install ripgrep</code></pre>

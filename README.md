@@ -31,5 +31,8 @@ Install Chocolatey:
 Install Nvim 0.9.4v:
 <pre><code> choco install neovim --version=0.9.4</code></pre>
 
+Install LLM(Clang):
+<pre><code>choco install llvm</code></pre>
+
 Install Ripgrep:
 <pre ><code>choco install ripgrep</code></pre>

@@ -50,7 +50,6 @@ git clone https://github.com/joaotdela/nvim-config.git
 mv nvim-config nvim
 mv nvim/after ../
 cd nvim
-echo "require('theprimeagen')" > init.lua
 rm -rf plugin
 nvim lua/theprimeagen/packer.lua
 ~~~
@@ -72,7 +71,6 @@ git clone https://github.com/joaotdela/nvim-config.git
 Rename-Item -Path "$env:LOCALAPPDATA\nvim-config" -NewName "nvim"
 move "$env:LOCALAPPDATA\nvim\after" "$env:LOCALAPPDATA"
 cd nvim
-echo "require('theprimeagen')" > init.lua
 rmdir "$env:LOCALAPPDATA\nvim\plugin"
 nvim lua/theprimeagen/packer.lua
 ~~~

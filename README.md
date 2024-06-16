@@ -73,7 +73,7 @@ Rename-Item -Path "$env:LOCALAPPDATA\nvim-config" -NewName "nvim"
 move "$env:LOCALAPPDATA\nvim\after" "$env:LOCALAPPDATA"
 cd nvim
 echo "require('theprimeagen')" > init.lua
-rmdir /s /q "$env:LOCALAPPDATA\nvim\plugin"
+rmdir "$env:LOCALAPPDATA\nvim\plugin"
 nvim lua/theprimeagen/packer.lua
 ~~~
 Run

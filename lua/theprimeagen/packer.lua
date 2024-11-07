@@ -12,9 +12,9 @@ return require('packer').startup(function(use)
             require("nvim-surround").setup()
         end
     })
-    use { 'RRethy/vim-illuminate' }
 
     -- Navigation
+    use { 'chentoast/marks.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
@@ -23,30 +23,28 @@ return require('packer').startup(function(use)
     use {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
-        requires = { {"nvim-lua/plenary.nvim"} }
+        requires = { { "nvim-lua/plenary.nvim" } }
     }
     use {
         "ggandor/leap.nvim",
         requires = {
-            'tpope/vim-repeat' ,
+            'tpope/vim-repeat',
         }
     }
     use({
         "stevearc/oil.nvim",
         tag = "*",
-        config = function()
-            require("oil").setup()
-        end
     })
 
     -- Visual
+    use { "rose-pine/neovim" }
+    use { "EdenEast/nightfox.nvim" }
     use { "catppuccin/nvim", as = "catppuccin" }
-    use { 'goolord/alpha-nvim' }
-    use { 'olimorris/onedarkpro.nvim' }
-    use { 'rose-pine/neovim' }
+    use { "numToStr/FTerm.nvim" }
     use { 'lewis6991/gitsigns.nvim' }
     use { 'tpope/vim-fugitive' }
-    use 'nvim-tree/nvim-web-devicons'
+    -- use { 'RRethy/vim-illuminate' }
+    use { 'nvim-tree/nvim-web-devicons' }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -59,7 +57,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate',
         config = function()
             require 'nvim-treesitter.configs'.setup {
-                ensure_installed = 'all',
+                -- ensure_installed = 'all',
                 highlight = {
                     enable = true,
                 },
@@ -98,12 +96,13 @@ return require('packer').startup(function(use)
     }
 
     -- DAP
-    use {
-        "mfussenegger/nvim-dap",
-        requires = {
-            "rcarriga/nvim-dap-ui",
-            "theHamsta/nvim-dap-virtual-text",
-            "nvim-telescope/telescope-dap.nvim",
-        }
-    }
+    -- use {
+    --     "mfussenegger/nvim-dap",
+    --     requires = {
+    --         "rcarriga/nvim-dap-ui",
+    --         "nvim-neotest/nvim-nio",
+    --         "theHamsta/nvim-dap-virtual-text",
+    --         "nvim-telescope/telescope-dap.nvim",
+    --     }
+    -- }
 end)

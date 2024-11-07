@@ -45,7 +45,7 @@ Obs: Run on PowerShell
 ## Nvim Config:
 Linux:
 ~~~bash
-cd config/
+cd .config/
 git clone https://github.com/joaotdela/nvim-config.git
 mv nvim-config nvim
 mv nvim/after ../

@@ -9,8 +9,8 @@
 2. Install Nvim 0.9.4v:<br/> 
    2.1 Download in dir Download [nvim.appimage](https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage) <br>
    2.2 Run: <br/>
-   <pre><code>chmod u+x nvim.appimage
-sudo mv nvim.appimage /usr/bin/nvim</code></pre>
+   <pre><code>chmod u+x nvim.appimage   </code></pre>
+   <pre><code>sudo mv nvim.appimage /usr/bin/nvim    </code></pre>
 
 3. Install Ripgrep:<br/>
    <pre><code>sudo apt install ripgrep</code></pre> 

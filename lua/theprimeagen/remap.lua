@@ -94,5 +94,5 @@ vim.keymap.set("n", "<M-s>", "<cmd>wa<CR>", { noremap = true, silent = true })
 
 
 -- Quit Neovim with Ctrl-Q
-vim.keymap.set("n", "<C-q>", "<cmd>qa<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-q>", "<cmd>qa<CR>", { noremap = true, silent = true })
 

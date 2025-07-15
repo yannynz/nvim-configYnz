@@ -96,3 +96,11 @@ vim.keymap.set("n", "<M-s>", "<cmd>wa<CR>", { noremap = true, silent = true })
 -- Quit Neovim with Ctrl-Q
 vim.keymap.set("n", "<M-q>", "<cmd>qa<CR>", { noremap = true, silent = true })
 
+-- Open command line with <tecla>
+vim.keymap.set('n', '<C-t>', function()
+  vim.cmd('normal :')
+end, { desc = 'Abre linha de comando com Ctrl+t' })
+
+
+
+

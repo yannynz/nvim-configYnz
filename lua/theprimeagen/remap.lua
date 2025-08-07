@@ -95,7 +95,7 @@ vim.keymap.set("n", "<M-s>", "<cmd>wa<CR>", { noremap = true, silent = true })
 -- Quit Neovim with Ctrl-Q
 vim.keymap.set("n", "<M-q>", "<cmd>qa<CR>", { noremap = true, silent = true })
 
--- Open command line with <tecla>
+-- Open Mason with Alt-m 
 vim.keymap.set('n', '<M-m>', "<cmd>Mason<CR>", { noremap = true, silent = true })
 
 -- Abre o prompt do : com Alt-t
